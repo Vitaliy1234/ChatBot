@@ -7,7 +7,7 @@ import java.util.Map;
 public class Start {
 
 	public static void main(String[] args) {
-		System.out.println("Сыграем?");
+		System.out.println("РЎС‹РіСЂР°РµРј?");
 		Map<String, String> qAndA = QuestionsReader.GetQuestionsAndAnswers();
 		System.out.println(qAndA);
 	}

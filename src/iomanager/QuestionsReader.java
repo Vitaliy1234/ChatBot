@@ -9,8 +9,7 @@ public class QuestionsReader
 		BufferedReader reader;
 		Map<String, String> questionsAndAnswers = new HashMap<String, String>();
 		try {
-			reader = new BufferedReader(new FileReader(
-					"Questions.txt"));
+			reader = new BufferedReader(new FileReader("Questions.txt"));
 			String line = reader.readLine();
 			while (line != null) {
 				int delimiterIndex = line.indexOf("|");
