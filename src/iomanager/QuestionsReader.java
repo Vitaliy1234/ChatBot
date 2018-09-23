@@ -1,31 +1,31 @@
 package iomanager;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
-public class QuestionsReader 
+public class QuestionsReader
 {
-	public static Map<String, String> GetQuestionsAndAnswers(){
+	public static Map<String, Set<String>> GetDataFromFile(String fileName){
 		BufferedReader reader;
-		Map<String, String> questionsAndAnswers = new HashMap<String, String>();
+		Map<String, Set<String>> questionsAndAnswers = new HashMap<>();
+
 		try {
-			reader = new BufferedReader(new FileReader("Questions.txt"));
+			reader = new BufferedReader(new FileReader(fileName));
 			String line = reader.readLine();
+
 			while (line != null) {
-				int delimiterIndex = line.indexOf("|");
-				String curQuestion = line.substring(0, delimiterIndex);
-				String curAnswer = line.substring(delimiterIndex + 1);
-				questionsAndAnswers.put(curQuestion, curAnswer);
-				//System.out.println(curQuestion);
-				//System.out.println(curAnswer);
+				String[] curQuestionAndAnswer = line.split("::");
+				Set<String> curAnswers = new HashSet<>(Arrays.asList(curQuestionAndAnswer[1].split(",")));
+				questionsAndAnswers.put(curQuestionAndAnswer[0], curAnswers);
 				line = reader.readLine();
 			}
+
 			reader.close();
-			
-		} catch (IOException e) {
+
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		return questionsAndAnswers;
 	}
 }
