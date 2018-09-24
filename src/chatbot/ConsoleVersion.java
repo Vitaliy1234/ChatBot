@@ -1,14 +1,14 @@
 package chatbot;
 import iomanager.*;
-import java.io.*;
+
 import java.util.*;
 
 public class ConsoleVersion {
 
-	private static final int numbersOfTopics = 3;
+	private static final int numbersOfTopics = 4;
 	private static final Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println("Сыграем?(Д\\Н)");
 		String userAnswer = input.nextLine();
 
@@ -29,9 +29,12 @@ public class ConsoleVersion {
 		System.out.println("На выбор " + numbersOfTopics + " тем(-ы): ");
 		System.out.println("1. Случайные вопросы.\n" +
 				"2. Математика.\n" +
-				"3. Интересные факты.");
+				"3. Интересные факты.\n" +
+                "4. Случайные вопросы (при наличии интернета).");
+
 		userAnswer = input.nextLine();
-		String curFileName;
+		String curFileName = "";
+		boolean networkQuestions = false;
 
 		while(true) {
 			switch (userAnswer){
@@ -44,6 +47,9 @@ public class ConsoleVersion {
 				case "3":
 					curFileName = "Interesting";
 					break;
+                case "4":
+                    networkQuestions = true;
+                    break;
 				default:
 					System.out.println("Мимо, попробуй ещё раз)");
 					userAnswer = input.nextLine();
@@ -53,10 +59,20 @@ public class ConsoleVersion {
 			break;
 		}
 
-		//qAndA = Questions and Answers.
-		Map<String, Set<String>> qAndA = QuestionsReader.GetDataFromFile("Questions/" + curFileName + ".txt");
-		List<String> allQuestions = new ArrayList<>(qAndA.keySet());
-		//System.out.println(allQuestions);
+        Map<String, Set<String>> qAndA = new HashMap<>();
+        List<String> allQuestions = new ArrayList<>();
+
+        //qAndA = Questions and Answers.
+		if (!networkQuestions){
+            qAndA = QuestionsReader.GetDataFromFile("Questions/" + curFileName + ".txt");
+        }
+        else {
+            qAndA = GetNetQuestions();
+        }
+
+        allQuestions = new ArrayList<>(qAndA.keySet());
+
+//		System.out.println(allQuestions);
 		System.out.println();
 		System.out.println("Чтобы выйти напишите в любой момент \"\\выход\"");
 		System.out.println();
@@ -67,11 +83,12 @@ public class ConsoleVersion {
 		System.out.println("Количетсво жизней : " + hp);
 
 		while (hp != 0 && !allQuestions.isEmpty()) {
-			int curIndexQuestion = new Random().nextInt(allQuestions.size());
-			//System.out.println(curIndexQuestion);
-			String curQuestion = allQuestions.get(curIndexQuestion);
-			allQuestions.remove(curIndexQuestion);
-			System.out.println(curQuestion);
+            int curIndexQuestion = new Random().nextInt(allQuestions.size());
+            //System.out.println(curIndexQuestion);
+            String curQuestion = allQuestions.get(curIndexQuestion);
+            System.out.println(curQuestion);
+            allQuestions.remove(curIndexQuestion);
+
 			userAnswer = input.nextLine();
 
 			if (userAnswer.toLowerCase().equals("\\выход")) {
@@ -98,4 +115,9 @@ public class ConsoleVersion {
 
 		System.out.println("Аригато годзаимас!:3 До свидания.");
 	}
+
+	private static Map<String, Set<String>> GetNetQuestions() throws Exception {
+        int curNumPage = new Random().nextInt(299);
+	    return QuestionsFromWeb.quizParser(curNumPage);
+    }
 }
