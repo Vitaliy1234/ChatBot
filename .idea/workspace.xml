@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cc49fc79-f7d1-4f55-91a5-b5cf826fd53b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/iomanager/QuestionsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/iomanager/QuestionsReader.class" afterDir="false" />
     </list>
+=======
+    <list default="true" id="89becab6-36b1-46d1-a95b-bbf7efa0be04" name="Default Changelist" comment="" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,30 +16,64 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ChatBot$ConsoleVersion.ic" NAME="ConsoleVersion Coverage Results" MODIFIED="1537766191919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>chatbot.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1552664762">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="class" value="3" />
+          <entry key="java" value="11" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="txt" value="23" />
+          <entry key="dummy" value="3" />
+          <entry key="java" value="1368" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="JAVA" value="1368" />
+          <entry key="PLAIN_TEXT" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -73,15 +111,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,6 +152,13 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
             </state>
           </provider>
         </entry>
@@ -112,13 +181,23 @@
         <option value="$PROJECT_DIR$/Questions.txt" />
         <option value="$PROJECT_DIR$/src/console/DataFromUser.java" />
         <option value="$PROJECT_DIR$/src/chatbot/Start.java" />
-        <option value="$PROJECT_DIR$/src/telegram/DataHandler.java" />
-        <option value="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Questions/Interesting.txt" />
         <option value="$PROJECT_DIR$/Questions/Maths.txt" />
         <option value="$PROJECT_DIR$/src/iomanager/QuestionsReader.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java" />
+=======
+        <option value="$PROJECT_DIR$/src/telegram/DataHandler.java" />
+        <option value="$PROJECT_DIR$/src/telegrambot/DataHandler.java" />
+        <option value="$PROJECT_DIR$/src/telegrambot/StartBot.java" />
+        <option value="$PROJECT_DIR$/src/telegrambot/Main.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/TelegramBot.java" />
+        <option value="$PROJECT_DIR$/src/telegrambot/Bot.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/QuestionGenerator.java" />
+        <option value="$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       </list>
     </option>
   </component>
@@ -135,34 +214,35 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1340" />
+    <option name="height" value="698" />
+  </component>
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="AndroidView" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ChatBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatBot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatBot" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatBot" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChatBot" type="b2602c69:ProjectViewProjectNode" />
@@ -188,13 +268,16 @@
             </path>
             <path>
               <item name="ChatBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ChatBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="telegrambot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
@@ -218,12 +301,19 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="Scope" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537770457866" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537766834285" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk-10.0.2/lib/telegrambots-4.1-jar-with-dependencies.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -241,7 +331,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.QuestionsFromWeb">
+=======
+  <component name="RunManager" selected="Application.ConsoleVersion">
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     <configuration name="ConsoleVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chatbot.ConsoleVersion" />
       <module name="ChatBot" />
@@ -255,6 +349,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="telegrambot.Main" />
+      <module name="ChatBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     <configuration name="QuestionsFromWeb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="iomanager.QuestionsFromWeb" />
       <module name="ChatBot" />
@@ -268,14 +378,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <list>
       <item itemvalue="Application.ConsoleVersion" />
+=======
+    <configuration name="TelegramBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatbot.TelegramBot" />
+      <module name="ChatBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chatbot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConsoleVersion" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TelegramBot" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       <item itemvalue="Application.QuestionsFromWeb" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.QuestionsFromWeb" />
         <item itemvalue="Application.ConsoleVersion" />
+        <item itemvalue="Application.QuestionsFromWeb" />
+        <item itemvalue="Application.TelegramBot" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +429,11 @@
       <workItem from="1537283683097" duration="7604000" />
       <workItem from="1537294129495" duration="2085000" />
       <workItem from="1537298219593" duration="478000" />
-      <workItem from="1537298840161" duration="368000" />
+      <workItem from="1537298840161" duration="1897000" />
+      <workItem from="1537301255062" duration="4116000" />
+      <workItem from="1537722581053" duration="852000" />
+      <workItem from="1537762098764" duration="4698000" />
+      <workItem from="1537769840831" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="ConsoleVersion added.">
       <created>1537299093700</created>
@@ -305,31 +442,62 @@
       <option name="project" value="LOCAL" />
       <updated>1537299093700</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="QuestionsFromWeb added.">
       <created>1537733702047</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1537733702047</updated>
+=======
+    <task id="LOCAL-00002" summary="ConsoleVersion added.">
+      <created>1537299213491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537299213491</updated>
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     </task>
-    <task id="LOCAL-00003" summary="Lol">
-      <created>1537195221481</created>
+    <task id="LOCAL-00003" summary="ConsoleVersion added.">
+      <created>1537299229780</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1537195221481</updated>
+      <updated>1537299229780</updated>
     </task>
+    <task id="LOCAL-00004" summary="ConsoleVersion added.">
+      <created>1537299241173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537299241173</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Just.">
+      <created>1537770313483</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537770313483</updated>
+    </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="3" />
+=======
+    <option name="localTasksCounter" value="6" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334000" />
+    <option name="totallyTimeSpent" value="12206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16792738" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28723404" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,27 +506,39 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8449319" visible="true" weight="0.13278688" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.87082064" weight="0.32903227" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49772036" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772036" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15506808" side_tool="true" visible="true" weight="0.13278688" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49316108" weight="0.32786885" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4969605" weight="0.32903227" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772036" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50911856" side_tool="true" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49088147" visible="true" weight="0.32903227" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32978722" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32978722" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32978722" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,8 +550,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lol" />
     <MESSAGE value="ConsoleVersion added." />
+<<<<<<< HEAD
     <MESSAGE value="QuestionsFromWeb added." />
     <option name="LAST_COMMIT_MESSAGE" value="QuestionsFromWeb added." />
+=======
+    <MESSAGE value="Just." />
+    <option name="LAST_COMMIT_MESSAGE" value="Just." />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Questions/Interesting.txt">
@@ -389,22 +574,75 @@
         <state relative-caret-position="-1836" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/telegram/DataHandler.java">
+=======
+    <entry file="file://$PROJECT_DIR$/bin/chatbot/ConsoleVersion.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/iomanager/QuestionsReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/telegram/DataHandler.class" />
+    <entry file="file://$PROJECT_DIR$/src/telegram/DataHandler.java" />
+    <entry file="file://$PROJECT_DIR$/ChatBot.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/telegrambot/StartBot.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/telegrambots_4_1_jar_with_dependencies.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/telegrambot/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/telegrambot/Bot.java">
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbot/TelegramBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbot/QuestionGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
+        <state relative-caret-position="334">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="252">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
@@ -414,11 +652,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-205">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+=======
+        <state relative-caret-position="527">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>JDK10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ChatBot</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>telegrambots-4.1-jar-with-dependencies</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+>>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
   </component>
 </project>
