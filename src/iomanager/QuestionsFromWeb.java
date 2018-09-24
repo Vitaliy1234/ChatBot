@@ -13,8 +13,11 @@ public class QuestionsFromWeb {
         URL quizSite;
         if (pageNumber == 0)
             quizSite = new URL("https://baza-otvetov.ru/categories/view/1/");
-        else
+        else {
             quizSite = new URL("https://baza-otvetov.ru/categories/view/1/" + pageNumber + "0");
+            System.out.println("PageNumber: " + pageNumber);
+        }
+
         BufferedReader in = new BufferedReader(new InputStreamReader(quizSite.openStream()));
 
         String inputLine;
@@ -22,6 +25,7 @@ public class QuestionsFromWeb {
         while ((inputLine = in.readLine()) != null)
             quizSiteText.append(inputLine);
         in.close();
+
         String quizText = quizSiteText.toString();
         String categories = quizText.substring(quizText.indexOf("q-list__table") + "q-list__table".length() + 2);
         String cats = categories.substring(0, categories.indexOf("</table>"));
@@ -36,27 +40,62 @@ public class QuestionsFromWeb {
         Pattern varianstsPattern = Pattern.compile("quiz-answers.+?<");
         Matcher variantsMatcher = varianstsPattern.matcher(cats);
 
-        Pattern answerPattern = Pattern.compile("<td>\\D+?<\\/td>");
-        Matcher answerMatcher = answerPattern.matcher(cats);
+        ArrayList<String> answers = parseAnswers(cats);
 
-        while (m.find() && answerMatcher.find() && variantsMatcher.find()) {
+        int counter = 0;
+        while (m.find() && variantsMatcher.find() && counter < answers.size()) {
             String curLine = m.group();
             String curVariants = variantsMatcher.group();
-            String curLineAns = answerMatcher.group();
 
             String quest = curLine.substring(curLine.indexOf(">") + 1, curLine.lastIndexOf("<"));
             String variants = curVariants.substring(curVariants.indexOf(":") + 2, curVariants.lastIndexOf("<"));
-            String ans = curLineAns.substring(curLineAns.indexOf(">") + 1, curLineAns.lastIndexOf("<"));
+            variants = variants.replaceAll("\\s+", " ");
+            variants = variants.replaceAll(", ", ",");
 
-            variants = variants.replaceAll("\\s", " ");
-            ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(",")));
-            variantsList.add(ans);
-            Collections.shuffle(variantsList);
+            if (variants.charAt(variants.length() - 1) == ' ') {
+                variants = variants.substring(0, variants.length() - 1);
+            }
+
+            String curAnswer = answers.get(counter);
+
+            System.out.println(variants);
+            ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(", ")));
+            variantsList.add(curAnswer);
+            System.out.println("Answer: " + curAnswer);
+            variantsList = mixList(variantsList);
             Set<String> answerSet = new HashSet<>();
-            answerSet.add(ans.toLowerCase());
+            answerSet.add(curAnswer.toLowerCase());
             questionAndAnswer.put(quest + variantsList, answerSet);
+            counter++;
         }
 
         return questionAndAnswer;
+    }
+
+    private static ArrayList<String> mixList(ArrayList<String> inputList) {
+        System.out.println("ДО" + inputList);
+        Collections.shuffle(inputList);
+        System.out.println("POSLE" + inputList);
+        return inputList;
+    }
+
+    private static ArrayList<String> parseAnswers(String cats) {
+        ArrayList<String> outputList = new ArrayList<>();
+
+        Pattern answerPattern = Pattern.compile("<td>.+?<\\/td>");
+        Matcher answerMatcher = answerPattern.matcher(cats);
+
+        int counter = 0;
+        while(answerMatcher.find()) {
+            counter++;
+            String curLineAns = answerMatcher.group();
+            String ans = curLineAns.substring(curLineAns.indexOf(">") + 1, curLineAns.lastIndexOf("<"));
+
+            if (counter % 3 != 0)
+                continue;
+            outputList.add(ans);
+        }
+
+        return outputList;
     }
 }

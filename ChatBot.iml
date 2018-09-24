@@ -20,7 +20,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk-10.0.2/lib/telegrambots-4.1-jar-with-dependencies.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/telegrambots-4.1-jar-with-dependencies.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
