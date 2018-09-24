@@ -48,7 +48,7 @@ public class QuestionsFromWeb {
             String variants = curVariants.substring(curVariants.indexOf(":") + 2, curVariants.lastIndexOf("<"));
             String ans = curLineAns.substring(curLineAns.indexOf(">") + 1, curLineAns.lastIndexOf("<"));
 
-            variants = variants.replaceAll("\\s", "");
+            variants = variants.replaceAll("\\s", " ");
             ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(",")));
             variantsList.add(ans);
             Collections.shuffle(variantsList);
