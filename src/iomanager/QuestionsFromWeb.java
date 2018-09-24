@@ -29,10 +29,6 @@ public class QuestionsFromWeb {
         Pattern quotPattern = Pattern.compile("&quot;");
         Matcher quotMatcher = quotPattern.matcher(cats);
         cats = quotMatcher.replaceAll("");
-<<<<<<< HEAD
-=======
-//        System.out.println(cats);
->>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
 
         Pattern questionPattern = Pattern.compile("<a href.+?<\\/a>");
         Matcher m = questionPattern.matcher(cats);
@@ -56,14 +52,8 @@ public class QuestionsFromWeb {
             ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(",")));
             variantsList.add(ans);
             Collections.shuffle(variantsList);
-<<<<<<< HEAD
-            Set<String> answerSet = new HashSet<>();
-            answerSet.add(ans);
-=======
-//            System.out.println(quest + variantsList + "::" + ans);
             Set<String> answerSet = new HashSet<>();
             answerSet.add(ans.toLowerCase());
->>>>>>> 33751855fa1d84855551515a68a38fe45d9a5423
             questionAndAnswer.put(quest + variantsList, answerSet);
         }
 
