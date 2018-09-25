@@ -13,17 +13,17 @@ public class QuestionsFromWeb {
         URL quizSite;
         if (pageNumber == 0)
             quizSite = new URL("https://baza-otvetov.ru/categories/view/1/");
-        else {
+        else
             quizSite = new URL("https://baza-otvetov.ru/categories/view/1/" + pageNumber + "0");
-            System.out.println("PageNumber: " + pageNumber);
-        }
 
         BufferedReader in = new BufferedReader(new InputStreamReader(quizSite.openStream()));
 
         String inputLine;
         StringBuilder quizSiteText = new StringBuilder();
+
         while ((inputLine = in.readLine()) != null)
             quizSiteText.append(inputLine);
+
         in.close();
 
         String quizText = quizSiteText.toString();
@@ -57,12 +57,8 @@ public class QuestionsFromWeb {
             }
 
             String curAnswer = answers.get(counter);
+            ArrayList<String> variantsList = createVariantsList(variants, curAnswer);
 
-            System.out.println(variants);
-            ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(", ")));
-            variantsList.add(curAnswer);
-            System.out.println("Answer: " + curAnswer);
-            variantsList = mixList(variantsList);
             Set<String> answerSet = new HashSet<>();
             answerSet.add(curAnswer.toLowerCase());
             questionAndAnswer.put(quest + variantsList, answerSet);
@@ -72,11 +68,11 @@ public class QuestionsFromWeb {
         return questionAndAnswer;
     }
 
-    private static ArrayList<String> mixList(ArrayList<String> inputList) {
-        System.out.println("ДО" + inputList);
-        Collections.shuffle(inputList);
-        System.out.println("POSLE" + inputList);
-        return inputList;
+    private static ArrayList<String> createVariantsList(String variants, String curAnswer) {
+        ArrayList<String> variantsList = new ArrayList<>(Arrays.asList(variants.split(", ")));
+        variantsList.add(curAnswer);
+        Collections.shuffle(variantsList);
+        return variantsList;
     }
 
     private static ArrayList<String> parseAnswers(String cats) {
@@ -93,6 +89,7 @@ public class QuestionsFromWeb {
 
             if (counter % 3 != 0)
                 continue;
+
             outputList.add(ans);
         }
 
