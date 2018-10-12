@@ -5,6 +5,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+
 public class QuestionsFromWeb {
 
     public static Map<String, Set<String>> quizParser(int pageNumber) throws Exception {
