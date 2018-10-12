@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89becab6-36b1-46d1-a95b-bbf7efa0be04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_petersamokhin_vk_bot_java_sdk_0_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/Interesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/Интересное.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/Maths.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/Математика.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,14 +91,14 @@
           <entry key="dummy" value="8" />
           <entry key="gradle" value="5" />
           <entry key="java" value="8440" />
-          <entry key="txt" value="35" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
           <entry key="JAVA" value="8440" />
-          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="PLAIN_TEXT" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -183,8 +178,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="45" column="50" lean-forward="true" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+            <state relative-caret-position="225">
+              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -390,7 +385,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539364875836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539365168329" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/telegrambots-4.1-jar-with-dependencies.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -582,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537896319718</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit for edit.">
+      <created>1539364959147</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1539364959147</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -590,9 +592,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12859304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12859304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -610,7 +611,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772036" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13086233" side_tool="true" weight="0.083606556" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48940998" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.48940998" visible="true" weight="0.12131148" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -669,7 +670,8 @@
     <MESSAGE value="Parser is ready." />
     <MESSAGE value="Update parser." />
     <MESSAGE value="Updated parser." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated parser." />
+    <MESSAGE value="Commit for edit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit for edit." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Questions/Интересное.txt">
@@ -834,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="45" column="50" lean-forward="true" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        <state relative-caret-position="225">
+          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
