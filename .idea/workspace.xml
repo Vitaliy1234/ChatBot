@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89becab6-36b1-46d1-a95b-bbf7efa0be04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chatbot/AskTheQuestConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/MainLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/TelegramBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/VkVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/VkVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iomanager/IOmanager.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +84,7 @@
     <session id="21240628">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.42" value="1" />
@@ -83,22 +92,23 @@
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="8" />
+          <entry key="dummy" value="26" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="8440" />
+          <entry key="java" value="10674" />
           <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="8440" />
-          <entry key="PLAIN_TEXT" value="60" />
+          <entry key="JAVA" value="10674" />
+          <entry key="PLAIN_TEXT" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -126,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatbot/VkVersion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
-              <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+            <state relative-caret-position="-539">
+              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,26 +148,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatbot/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="336">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,41 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2226">
-              <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iomanager/IOmanager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chatbot/TelegramBot.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chatbot/Logic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="147">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -230,10 +191,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chatbot/MainLoop.java">
+        <entry file="file://$PROJECT_DIR$/src/chatbot/AskTheQuestConsole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -283,17 +247,18 @@
         <option value="$PROJECT_DIR$/src/chatbot/TelegramBot.java" />
         <option value="$PROJECT_DIR$/src/telegrambot/Bot.java" />
         <option value="$PROJECT_DIR$/src/chatbot/QuestionGenerator.java" />
-        <option value="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/chatbot/vkVersion.java" />
         <option value="$PROJECT_DIR$/src/iomanager/QuestionsFromWeb.java" />
         <option value="$PROJECT_DIR$/src/iomanager/IOmanager.java" />
         <option value="$PROJECT_DIR$/src/chatbot/Session.java" />
-        <option value="$PROJECT_DIR$/src/chatbot/VkVersion.java" />
-        <option value="$PROJECT_DIR$/src/chatbot/MainLoop.java" />
-        <option value="$PROJECT_DIR$/src/chatbot/Logic.java" />
         <option value="$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java" />
         <option value="$PROJECT_DIR$/src/chatbot/User.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/VkVersion.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/MainLoop.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/ConsoleVersion.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/Logic.java" />
+        <option value="$PROJECT_DIR$/src/chatbot/AskTheQuestConsole.java" />
       </list>
     </option>
   </component>
@@ -385,7 +350,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539365168329" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539458596813" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/telegrambots-4.1-jar-with-dependencies.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -420,8 +385,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleVersionNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatbot.ConsoleVersionNew" />
+    <configuration name="ConsoleVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatbot.ConsoleVersion" />
       <module name="ChatBot" />
       <extension name="coverage">
         <pattern>
@@ -479,13 +444,11 @@
       <item itemvalue="Application.TelegramBot" />
       <item itemvalue="Application.QuestionsFromWeb" />
       <item itemvalue="Application.VkVersion" />
-      <item itemvalue="Application.ConsoleVersionNew" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VkVersion" />
-        <item itemvalue="Application.ConsoleVersionNew" />
         <item itemvalue="Application.ConsoleVersion" />
+        <item itemvalue="Application.VkVersion" />
         <item itemvalue="Application.QuestionsFromWeb" />
         <item itemvalue="Application.TelegramBot" />
       </list>
@@ -584,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539364959147</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit for edit.">
+      <created>1539365249527</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539365249527</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -593,7 +563,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12859304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1301059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -602,16 +572,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86913764" weight="0.2852459" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86913764" weight="0.026229508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4969605" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772036" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772036" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13086233" side_tool="true" weight="0.083606556" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.48940998" visible="true" weight="0.12131148" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48940998" weight="0.06557377" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -740,6 +710,23 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="112" column="12" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iomanager/IOmanager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/iomanager/QuestionsReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -754,10 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
+    <entry file="file://$PROJECT_DIR$/src/chatbot/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2226">
-          <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -776,68 +763,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbot/VkVersion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        <state relative-caret-position="-539">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/iomanager/IOmanager.java">
+    <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="189">
+          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbot/AskTheQuestConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbot/Logic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbot/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbot/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbot/ConsoleVersionNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="147">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

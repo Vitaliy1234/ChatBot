@@ -9,7 +9,7 @@ public class User {
     private String Id;
     public status State = status.ChooseTopic;
     private String Topic;
-    private Map<String, Set<String>> Questions;
+    Map<String, Set<String>> Questions;
 
     User(String id) {
         Id = id;
@@ -39,9 +39,9 @@ public class User {
         Topic = topic;
     }
 
-    public void SetQuestions(Map<String, Set<String>> questions) {
-        Questions = questions;
-    }
+    //public void SetQuestions(Map<String, Set<String>> questions) {
+        //Questions = questions;
+    //}
 }
 
 enum status {

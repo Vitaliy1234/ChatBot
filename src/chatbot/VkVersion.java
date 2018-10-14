@@ -45,7 +45,7 @@ public class VkVersion {
                 .text("Ну давай сыграем.")
                 .send();
 
-        Logic.startGame(1);
+        //Logic.startGame(1);
     }
 
     static int chooseTheme(String[] themes){

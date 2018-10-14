@@ -1,123 +1,81 @@
 package chatbot;
-import iomanager.*;
 
-import java.util.*;
+import javafx.util.Pair;
+
+import java.util.Scanner;
 
 public class ConsoleVersion {
+    private static final Scanner input = new Scanner(System.in);
+    private static String[] situationStrings = {
+            "Ладно, до встречи и удачи:3",
+            "Правильный ответ! Количество правильных ответов: ",
+            "К сожалению, ответ неверный. Количетсво жизней : "
+    };
+    static String ConsoleUserId = "0";
 
-	private static final int numbersOfTopics = 4;
-	private static final Scanner input = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+        System.out.println("Сыграем?(Д\\Н)");
 
-	public static void main(String[] args) throws Exception {
-		System.out.println("Сыграем?(Д\\Н)");
-		String userAnswer = input.nextLine();
+        while (true) {
+            String userAnswer = input.nextLine();
 
-		while(true) {
-			//Сравнение строк с разными кодировками. ЗАГУГЛИТЬ!
-			if (userAnswer.toLowerCase().equals("д")){
-				break;
-			}
-			else if (userAnswer.toLowerCase().equals("н")){
-				System.out.println("Ладно, в другой раз! Удачи:3");
-				System.exit(0);
-			}
-
-			System.out.println("Не та клавиша, попробуйте ещё раз)");
-			userAnswer = input.nextLine();
-		}
-
-		System.out.println("На выбор " + numbersOfTopics + " тем(-ы): ");
-		System.out.println("1. Случайные вопросы.\n" +
-				"2. Математика.\n" +
-				"3. Интересные факты.\n" +
-                "4. Случайные вопросы (при наличии интернета).");
-
-		userAnswer = input.nextLine();
-		String curFileName = "";
-		boolean networkQuestions = false;
-
-		while(true) {
-			switch (userAnswer){
-				case "1":
-					curFileName = "Random";
-					break;
-				case "2":
-					curFileName = "Maths";
-					break;
-				case "3":
-					curFileName = "Interesting";
-					break;
-                case "4":
-                    networkQuestions = true;
-                    break;
-				default:
-					System.out.println("Мимо, попробуй ещё раз)");
-					userAnswer = input.nextLine();
-					continue;
-			}
-
-			break;
-		}
-
-        Map<String, Set<String>> qAndA = new HashMap<>();
-        List<String> allQuestions = new ArrayList<>();
-
-        //qAndA = Questions and Answers.
-		if (!networkQuestions){
-            qAndA = QuestionsReader.GetDataFromFile("Questions/" + curFileName + ".txt");
-        }
-        else {
-            qAndA = GetNetQuestions();
+            if (userAnswer.toLowerCase().equals("д")) {
+                break;
+            }
+            else if (userAnswer.toLowerCase().equals("н")) {
+                System.out.println("Не хочешь - как хочешь.");
+                System.exit(0);
+                break;
+            }
+            else
+                System.out.println("Нажми букаву \"Д\", если хочешь играть и букаву \"Н\", если не хочешь");
         }
 
-        allQuestions = new ArrayList<>(qAndA.keySet());
+        Logic.startGame(ConsoleUserId);
+        int numberOfTopic = chooseTheme(Logic.Topics);
+        Logic.formQuestionsForUser(numberOfTopic, ConsoleUserId);
+        AskTheQuestConsole.askTheQuestions(ConsoleUserId, numberOfTopic);
+//        String curQuestion = Logic.getQuestionForUser(numberOfTopic, ConsoleUserId);
+//        String userAnswer = getAnswer(curQuestion);
+//        String[] resultOfChecking = Logic.checkUserAnswer(ConsoleUserId, curQuestion, userAnswer);
+//        correctOrIncorrect(Integer.parseInt(resultOfChecking[0]), resultOfChecking[1]);
+//
+//        if (resultOfChecking[2].equals("end")) {
+//            boolean win = false;
+//
+//            if (resultOfChecking[3].equals("win"))
+//                win = true;
+//
+//            gameResults(win, resultOfChecking[4]);
+//        }
+    }
 
-//		System.out.println(allQuestions);
-		System.out.println();
-		System.out.println("Чтобы выйти напишите в любой момент \"\\выход\"");
-		System.out.println();
+    static int chooseTheme(String[] themes) {
+        System.out.println("Выберите тему:");
+        int numberOfTopics = themes.length;
 
-		int score = 0;
-		int hp = 3;
+        for(int i = 0; i < numberOfTopics; i++)
+            System.out.println(i + 1 + " " + themes[i]);
 
-		System.out.println("Количетсво жизней : " + hp);
+        return Integer.parseInt(input.nextLine());
+    }
 
-		while (hp != 0 && !allQuestions.isEmpty()) {
-            int curIndexQuestion = new Random().nextInt(allQuestions.size());
-            //System.out.println(curIndexQuestion);
-            String curQuestion = allQuestions.get(curIndexQuestion);
-            System.out.println(curQuestion);
-            allQuestions.remove(curIndexQuestion);
+    static String getAnswer(String question) {
+        System.out.println(question);
+        return input.nextLine();
+    }
 
-			userAnswer = input.nextLine();
+    static void correctOrIncorrect(int correct, String addInfo) {
+        System.out.println(situationStrings[correct] + addInfo);
+        System.out.println();
+    }
 
-			if (userAnswer.toLowerCase().equals("\\выход")) {
-				System.out.println("Ладно, до встречи и удачи:3");
-				System.exit(0);
-			}
-			else if (qAndA.get(curQuestion).contains(userAnswer.toLowerCase())) {
-				score += 1;
-				System.out.println("Правильный ответ! Количество правильных ответов: " + score);
-			}
-			else {
-				hp -= 1;
-				System.out.println("К сожалению, ответ неверный. Количетсво жизней : " + hp);
-			}
+    static void gameResults(boolean win, String score) {
+        if (win)
+            System.out.println("Отлично поиграли! Вы выиграли! Количетсво очков : " + score);
+        else
+            System.out.println("Увы, у вас больше нет жизней. Вы проиграли. Количетсво очков : " + score);
 
-			System.out.println();
-		}
-
-		if (hp == 0) {
-			System.out.println("Вы проиграли, но держались молодцом! Количество очков : " + score);
-		}
-		else
-			System.out.println("Отлично поиграли! Вы выиграли! Количетсво очков : " + score);
-
-		System.out.println("Аригато годзаимас!:3 До свидания.");
-	}
-
-	private static Map<String, Set<String>> GetNetQuestions() throws Exception {
-        int curNumPage = new Random().nextInt(299);
-	    return QuestionsFromWeb.quizParser(curNumPage);
+        System.out.println("Аригато годзаимас!:3 До свидания.");
     }
 }
