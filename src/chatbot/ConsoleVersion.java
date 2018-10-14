@@ -1,63 +1,68 @@
 package chatbot;
 
-import javafx.util.Pair;
-
 import java.util.Scanner;
 
 public class ConsoleVersion {
     private static final Scanner input = new Scanner(System.in);
-    private static String[] situationStrings = {
-            "Ладно, до встречи и удачи:3",
-            "Правильный ответ! Количество правильных ответов: ",
-            "К сожалению, ответ неверный. Количетсво жизней : "
-    };
     static String ConsoleUserId = "0";
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Сыграем?(Д\\Н)");
+        System.out.println("Сыграем(Д\\Н)? Для вывода справки напиши \"\\хелб\". ");
+        String userAnswer;
 
         while (true) {
-            String userAnswer = input.nextLine();
+            userAnswer = input.nextLine();
 
             if (userAnswer.toLowerCase().equals("д")) {
+                System.out.println("Для выхода из игры в любой момент набери \"\\выход\"");
+                System.out.println();
                 break;
             }
+            else if (userAnswer.toLowerCase().equals("\\хелб"))
+                printHelp();
             else if (userAnswer.toLowerCase().equals("н")) {
                 System.out.println("Не хочешь - как хочешь.");
                 System.exit(0);
-                break;
             }
-            else
-                System.out.println("Нажми букаву \"Д\", если хочешь играть и букаву \"Н\", если не хочешь");
+            System.out.println();
+            System.out.println("Нажми букаву \"Д\", если хочешь играть и букаву \"Н\", если не хочешь");
         }
 
         Logic.startGame(ConsoleUserId);
-        int numberOfTopic = chooseTheme(Logic.Topics);
+        int numberOfTopic = chooseTopic(Logic.Topics);
         Logic.formQuestionsForUser(numberOfTopic, ConsoleUserId);
-        AskTheQuestConsole.askTheQuestions(ConsoleUserId, numberOfTopic);
-//        String curQuestion = Logic.getQuestionForUser(numberOfTopic, ConsoleUserId);
-//        String userAnswer = getAnswer(curQuestion);
-//        String[] resultOfChecking = Logic.checkUserAnswer(ConsoleUserId, curQuestion, userAnswer);
-//        correctOrIncorrect(Integer.parseInt(resultOfChecking[0]), resultOfChecking[1]);
-//
-//        if (resultOfChecking[2].equals("end")) {
-//            boolean win = false;
-//
-//            if (resultOfChecking[3].equals("win"))
-//                win = true;
-//
-//            gameResults(win, resultOfChecking[4]);
-//        }
+        AskTheQuestConsole.askTheQuestions(ConsoleUserId);
     }
 
-    static int chooseTheme(String[] themes) {
+    private static int chooseTopic(String[] topics) {
         System.out.println("Выберите тему:");
-        int numberOfTopics = themes.length;
 
-        for(int i = 0; i < numberOfTopics; i++)
-            System.out.println(i + 1 + " " + themes[i]);
+        for(int i = 0; i < topics.length; i++)
+            System.out.println(i + 1 + " " + topics[i]);
 
-        return Integer.parseInt(input.nextLine());
+        String userAnswer = input.nextLine();
+
+        while (true) {
+            if (isInt(userAnswer))
+                break;
+            else if (userAnswer.equals("\\выход"))
+                System.exit(0);
+            else
+                System.out.println("Попробуй еще раз.");
+
+            userAnswer = input.nextLine();
+        }
+        return Integer.parseInt(userAnswer);
+    }
+
+    private static boolean isInt(String string) {
+        try {
+            Integer.parseInt(string);
+            return true;
+        }
+        catch (NumberFormatException exc) {
+            return false;
+        }
     }
 
     static String getAnswer(String question) {
@@ -65,17 +70,25 @@ public class ConsoleVersion {
         return input.nextLine();
     }
 
-    static void correctOrIncorrect(int correct, String addInfo) {
-        System.out.println(situationStrings[correct] + addInfo);
+    static void printCallback(SituationStrings callback, String addInfo) {
+        System.out.println(Logic.reaction.get(callback) + addInfo);
         System.out.println();
+
+        if (callback == SituationStrings.Exit)
+            System.exit(0);
+
+        if (callback == SituationStrings.Help)
+            printHelp();
     }
 
-    static void gameResults(boolean win, String score) {
-        if (win)
-            System.out.println("Отлично поиграли! Вы выиграли! Количетсво очков : " + score);
-        else
-            System.out.println("Увы, у вас больше нет жизней. Вы проиграли. Количетсво очков : " + score);
+    private static void printHelp() {
+        System.out.println("Хочешь выйти - набери \"\\выход\"\n" +
+                "При выборе темы набирай номер темы\n" +
+                "Удачной игры!:33");
+    }
 
+    static void gameResults(int score, String resultString) {
+        System.out.println(resultString + score);
         System.out.println("Аригато годзаимас!:3 До свидания.");
     }
 }

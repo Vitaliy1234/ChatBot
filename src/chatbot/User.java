@@ -8,7 +8,6 @@ public class User {
     private int Health = 3;
     private String Id;
     public status State = status.ChooseTopic;
-    private String Topic;
     Map<String, Set<String>> Questions;
 
     User(String id) {
@@ -34,23 +33,10 @@ public class User {
     public String GetId() {
         return Id;
     }
-
-    public void SetTopic(String topic) {
-        Topic = topic;
-    }
-
-    //public void SetQuestions(Map<String, Set<String>> questions) {
-        //Questions = questions;
-    //}
 }
 
 enum status {
     ChooseTopic,
     AnswerTheQuestion,
     HelpReading
-}
-
-enum version {
-    Console,
-    Vk
 }
